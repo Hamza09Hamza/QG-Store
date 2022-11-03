@@ -14,7 +14,11 @@
     margin: 1rem 0;
 }
 .SignCard{
-    background-color: #1B1B1B;
+    background: rgba( 255, 255, 255, 0.35 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border-radius: 10px;border: 1px solid rgba( 255, 255, 255, 0.18 );
     display: flex;
     align-items: center;
     justify-content: space-around ;
@@ -55,12 +59,11 @@
 }
 
 .RegisterBTN:hover{
-    filter: brightness(140%);
-    color: #dfdfdf;
+    background-color: #0080ff;
 }
 
 .RegisterBTN{
-    background-color: #616161;
+    background-color: #39b0ff;
 }
 
 .GoogleImg{
@@ -70,13 +73,12 @@
 }
 
 .GoogleBTN{
-    background-color: #cbcbcb;
-    color: black;
+    background-color: #39b0ff;
     display: flex;
     align-items: center;
 }
 .GoogleBTN:hover{
-    background-color: #ffffff;
+    background-color: #0080ff;
 }
 
 .DivsNamesInputs{
@@ -118,12 +120,14 @@
     border: none;
     border-bottom: #FFFFFF solid 1.5px;
     font-size: 1.2rem;
-    background-color: #1B1B1B;
+    background-color: rgba(0, 0, 0, 0);
     filter: brightness(90%);
 }
 
 .InputDesign:focus{
     outline: none;
+    border-bottom: #7bbdff solid 1.5px;
+
 }
 
 .Namesdiv{
@@ -171,12 +175,28 @@
 }
 
 
-@media  screen and (max-width:970px) {
+@media  screen and (max-width:930px) {
         .SignCard{
             width: 80%;
         }
         .Namesdiv{
             flex-direction: column;
             width: 100%;
+        }
+}
+@media screen and (max-width:500px) {
+        .Logo{
+            width: 55%;
+        }
+        .GoogleImg{
+            width: 2ch;
+        }
+        .GoogleBTN{
+            width: 50%;
+            padding: 0.3rem 0.9rem;
+            margin-bottom: 2rem;
+        }
+        .GoogleBTN> span{
+            width: 30ch;
         }
 }
