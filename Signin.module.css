@@ -44,7 +44,10 @@
 }
 
 .OrText{
-    font-size: 1.2rem;
+    font-size: 1.15rem;
+    width: 80%;
+    text-align: center;
+
 }
 
 .BTN{
@@ -175,9 +178,16 @@
 }
 
 
+.SignCard > h1{
+    padding: 0 0.5rem;
+    text-align: center;
+}
+.MainBackground>span{
+    font-size: 1rem;
+}
 @media  screen and (max-width:930px) {
         .SignCard{
-            width: 80%;
+            width: 90%;
         }
         .Namesdiv{
             flex-direction: column;
@@ -192,11 +202,14 @@
             width: 2ch;
         }
         .GoogleBTN{
-            width: 50%;
-            padding: 0.3rem 0.9rem;
-            margin-bottom: 2rem;
+            padding: 0.6rem 0.6rem;
+            margin: 2rem 0  ;
         }
         .GoogleBTN> span{
-            width: 30ch;
+            font-size: 0.9rem;
+            width: fit-content;
+        }
+        .SignCard>h1{
+            padding: 0 1rem;
         }
 }
