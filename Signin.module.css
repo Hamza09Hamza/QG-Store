@@ -1,0 +1,202 @@
+.MainBackground{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    padding-top: 5rem;
+    flex-direction: column;
+}
+
+.Logo{
+    width: 39%;
+    margin: 1rem 0;
+}
+.SignCard{
+    background: rgba( 255, 255, 255, 0.35 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border-radius: 10px;border: 1px solid rgba( 255, 255, 255, 0.18 );
+    display: flex;
+    align-items: center;
+    justify-content: space-around ;
+    height:fit-content;
+    width: 35%;
+    flex-direction: column;
+    border-radius: 25px;
+    margin-bottom: 1rem;
+}
+.Link{
+    color: #a7a7a7;
+    transition: all 0.5s;
+    cursor: pointer;
+    padding-bottom: 1rem;
+}
+
+.Link:hover{
+    color: #FFFFFF;
+}
+
+.Relativebox{
+    position: relative;
+}
+
+.OrText{
+    font-size: 1.2rem;
+}
+
+.BTN{
+    padding: 0.6rem 1.5rem;
+    cursor: pointer;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    border: none;
+    transition: all 0.5s;
+    margin: 1rem 1rem;
+    max-width: 100%;
+}
+
+.RegisterBTN:hover{
+    background-color: #0080ff;
+}
+
+.RegisterBTN{
+    background-color: #39b0ff;
+}
+
+.GoogleImg{
+    margin : 0 0.5rem ;
+    object-fit: cover;
+    width: 3ch;
+}
+
+.GoogleBTN{
+    background-color: #39b0ff;
+    display: flex;
+    align-items: center;
+}
+.GoogleBTN:hover{
+    background-color: #0080ff;
+}
+
+.DivsNamesInputs{
+    width: 35%;
+}
+
+.Labels{
+    position: absolute;
+    color: white;
+    font-size: 1.1rem;
+    z-index: 40;
+    color: #FFFFFF;
+    opacity: 0.4;
+    top: 25px;
+    left:1.5rem;
+    animation: push 0.5s;
+}
+
+.BtnDIV{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.DivsInput{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    position: relative;
+
+}
+
+.InputDesign{
+    width: 100%;
+    padding: 0.7rem 1.5rem;
+    margin: 1rem 0;
+    letter-spacing: 1.05px;
+    border: none;
+    border-bottom: #FFFFFF solid 1.5px;
+    font-size: 1.2rem;
+    background-color: rgba(0, 0, 0, 0);
+    filter: brightness(90%);
+}
+
+.InputDesign:focus{
+    outline: none;
+    border-bottom: #7bbdff solid 1.5px;
+
+}
+
+.Namesdiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    column-gap: 0.5rem;
+}
+
+.ImageInput{
+    position: absolute;
+    height: 50%;
+    right: 14px;
+    top: 17px;
+}
+
+.LabelsWInputsFocused{
+    top: 12px;
+    font-size: 0.8rem;
+    animation: pull 0.5s;
+}
+
+
+@keyframes pull {
+    0%{
+        top:25px;
+        font-size: 1.1rem;
+    }
+   
+    100%{
+        top: 12px;
+        font-size: 0.8rem;
+    }
+}
+@keyframes push {
+    0%{
+        top: 12px;
+        font-size: 0.8rem;
+    }
+    100%{
+        top:25px;
+        font-size: 1.1rem;
+    }
+}
+
+
+@media  screen and (max-width:930px) {
+        .SignCard{
+            width: 80%;
+        }
+        .Namesdiv{
+            flex-direction: column;
+            width: 100%;
+        }
+}
+@media screen and (max-width:500px) {
+        .Logo{
+            width: 55%;
+        }
+        .GoogleImg{
+            width: 2ch;
+        }
+        .GoogleBTN{
+            width: 50%;
+            padding: 0.3rem 0.9rem;
+            margin-bottom: 2rem;
+        }
+        .GoogleBTN> span{
+            width: 30ch;
+        }
+}
